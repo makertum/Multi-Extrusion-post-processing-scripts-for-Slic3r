@@ -1,5 +1,6 @@
 # Multi-Extrusion post-processing scripts for Slic3r
 useful postprocessing scripts for Slic3r for adding wipe towers and other multi-extrusion features. Written in Perl.
+![example g-code](http://i.imgur.com/lOzlO5L.png)
 ## Available scripts
 ### wipe_towers_tc.pl
 - adding wipe towers
