@@ -8,6 +8,7 @@ useful postprocessing scripts for Slic3r for adding wipe towers and other multi-
 
 ## Project Status and compatibility
 - [x] scripts are tested and working
+- [x] printing results are spotless and really awesome
 - [x] compatible to absolute coordinate mode
 - [x] compatible to relative extrusion mode
 - [ ] not compatible to relative coordinate mode
