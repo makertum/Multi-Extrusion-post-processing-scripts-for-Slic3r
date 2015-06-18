@@ -12,10 +12,13 @@ useful postprocessing scripts for Slic3r for adding wipe towers and other multi-
 - [ ] Slic3r environment variables cannot be read, therefore settings and parameters have to be manually declared within the custom "Start G-code"
 
 ## How to use
-In order to get the scripts working properly, I suggest creating print and printer settings in slic3r exclusively for use with those scripts:
+In order to get the scripts working properly, I suggest creating print and printer settings in slic3r exclusively for use with those scripts, and modifying these settings as described below.
+
+### Installation
+Copy the scripts to a directory of your choice, note that directory.
 
 ### In the print settings:
-Add the full path to the script in the _Print Settings -> Output options -> Post-processing scripts_ field
+Add the full path to the script as noted above in the _Print Settings -> Output options -> Post-processing scripts_ field
 I suggest only using one post-processing Script at a time.
 
 ### In the printer settings:
