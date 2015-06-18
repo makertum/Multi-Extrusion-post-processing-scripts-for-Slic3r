@@ -1,9 +1,11 @@
 # Multi-Extrusion post-processing scripts for Slic3r
-useful postprocessing scripts for Slic3r for adding wipe towers and other multi-extrusion features:
-- adding wipe towers / wiping
+useful postprocessing scripts for Slic3r for adding wipe towers and other multi-extrusion features.
+## Available scripts
+### wipe_towers_tc
+- adding wipe towers
 - resorting print order for finest results
 
-# Project Status and compatibility
+## Project Status and compatibility
 - [x] scripts are tested and working
 - [x] compatible to absolute coordinate mode
 - [x] compatible to relative extrusion mode
