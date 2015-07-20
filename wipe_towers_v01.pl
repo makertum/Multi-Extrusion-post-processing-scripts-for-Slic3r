@@ -690,7 +690,7 @@ sub insertWipeTowerE{
 		print travelToXYF($gcodeX[$e],$gcodeY[$e],$travelFeedrate);
 		print lower($travelLift);
 	}else{
-		print "; omitting wipe tower";
+		print "; omitting wipe tower\n";
 	}
 }
 
