@@ -79,4 +79,4 @@ I suggest only using one post-processing Script at a time.
 
 ## Disclaimer / License
 I've never written a line of Perl before this project. I'm still learning, but also had to make this work. Any suggestions are heavily welcome.
-All scripts in this repository are licensed under the GNU Affero General Public License, version 3 with me, Moritz Walter, as the author.
+All scripts in this repository are licensed under the GPLv3 with me, Moritz Walter, as the author.
