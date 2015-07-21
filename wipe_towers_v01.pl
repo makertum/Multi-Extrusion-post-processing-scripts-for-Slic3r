@@ -1,7 +1,8 @@
 # WIPE TOWERS v01
 # PERL POSTPROCESSOR FOR ADDING WIPE TOWERS TO SLIC3R
 # YUNOMAKE.COM
-# (c) Moritz Walter 2015
+# AUTHOR: Moritz Walter 2015
+# LICENSED UNDER GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
 
 #!/usr/bin/perl -i
 use strict;
