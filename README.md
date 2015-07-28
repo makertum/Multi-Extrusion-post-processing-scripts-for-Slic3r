@@ -12,6 +12,8 @@ useful postprocessing scripts for Slic3r for adding wipe towers and other multi-
 - [ ] not compatible to relative coordinate mode
 - [ ] not compatible to absolute extrusion mode
 - [ ] Slic3r environment variables cannot be read, therefore settings and parameters have to be manually declared within the custom "Start G-code"
+- [ ] clean up the code and find a readable structure
+- [ ] add workaround for Slic3rs lack of retraction on print start for inactive extruders
 
 ### v1
 - [x] scripts are tested and working
@@ -20,8 +22,9 @@ useful postprocessing scripts for Slic3r for adding wipe towers and other multi-
 - [x] compatible to relative extrusion mode
 
 ### v2
-- [x] some bugfixes suggested by PxT (thx!!)
+- [x] some bugfixes, including support for >2 extruders, suggested by PxT (thx!!)
 - [x] added optional parameter "forceToolChanges", defaults to true
+- [x] travelLifts now happen in both directions
 
 ## How to use
 In order to get the scripts working properly, I suggest creating print and printer settings in slic3r exclusively for use with those scripts, and modifying these settings as described below.
