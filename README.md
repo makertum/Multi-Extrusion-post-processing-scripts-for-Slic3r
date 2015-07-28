@@ -20,7 +20,7 @@ useful postprocessing scripts for Slic3r for adding wipe towers and other multi-
 - [x] compatible to relative extrusion mode
 
 ### v2
-- [x] some bugfixes
+- [x] some bugfixes suggested by PxT (thx!!)
 - [x] added optional parameter "forceToolChanges", defaults to true
 
 ## How to use
