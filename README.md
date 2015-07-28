@@ -7,16 +7,19 @@ useful postprocessing scripts for Slic3r for adding wipe towers and other multi-
 - resorting print order to a sequential build for finest results
 - highly configurable
 
-## Project Status and compatibility
-- [x] scripts are tested and working
-- [x] printing results are spotless and really awesome
-- [x] compatible to absolute coordinate mode
-- [x] compatible to relative extrusion mode
+## Changelog
+### to do
 - [ ] not compatible to relative coordinate mode
 - [ ] not compatible to absolute extrusion mode
 - [ ] Slic3r environment variables cannot be read, therefore settings and parameters have to be manually declared within the custom "Start G-code"
 
-## Changes in v2
+### v1
+- [x] scripts are tested and working
+- [x] printing results are spotless and really awesome
+- [x] compatible to absolute coordinate mode
+- [x] compatible to relative extrusion mode
+
+### v2
 - [x] some bugfixes
 - [x] added optional parameter "forceToolChanges", defaults to true
 
