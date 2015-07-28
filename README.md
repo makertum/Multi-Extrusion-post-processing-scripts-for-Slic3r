@@ -12,11 +12,13 @@ useful postprocessing scripts for Slic3r for adding wipe towers and other multi-
 - [ ] not compatible to relative coordinate mode
 - [ ] not compatible to absolute extrusion mode
 - [ ] Slic3r environment variables cannot be read, therefore settings and parameters have to be manually declared within the custom "Start G-code"
+
 ### v1
 - [x] scripts are tested and working
 - [x] printing results are spotless and really awesome
 - [x] compatible to absolute coordinate mode
 - [x] compatible to relative extrusion mode
+
 ### v2
 - [x] some bugfixes
 - [x] added optional parameter "forceToolChanges", defaults to true
