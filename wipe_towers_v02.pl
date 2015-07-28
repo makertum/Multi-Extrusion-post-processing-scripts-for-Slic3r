@@ -34,7 +34,7 @@ my $wipeTowerH=10;
 my $wipeTowerSpacing=20;
 my $wipeTowerLoops=5;
 my $wipeTowerBrimLoops=7;
-my $preventIdleExtruders=0;
+my $forceToolChanges=1;
 
 # wipe parameters with default values
 
@@ -670,7 +670,7 @@ sub evaluateLine{
 
 sub insertSortedLayer{
 	for(my $e=0;$e<$extruders;$e++){
-			if($preventIdleExtruders || $#{$linesByExtruder[$e]}>-1){ # only change the tool to print the tower if the tool is used, otherwise continue with current extruder
+			if($forceToolChanges || $#{$linesByExtruder[$e]}>-1){ # only change the tool to print the tower if the tool is used, otherwise continue with current extruder
 
 				# this should be a tool change sub
 				print("; tool change\n");
@@ -812,11 +812,11 @@ sub readParams{ # collecting params
 	if($_[0]=~/extrusionFeedrate=(\d*\.?\d*)/){
 		$extrusionFeedrate=$1*60.0;
 	}
-	if($_[0]=~/preventIdleExtruders=(true|false)/){
+	if($_[0]=~/forceToolChanges=(true|false)/){
 		if($1 eq "true"){
-			$preventIdleExtruders=1;
+			$forceToolChanges=1;
 		}elsif($1 eq "false"){
-			$preventIdleExtruders=0;
+			$forceToolChanges=0;
 		}
 	}
 }
