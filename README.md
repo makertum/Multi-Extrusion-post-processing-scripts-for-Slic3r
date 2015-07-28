@@ -16,6 +16,10 @@ useful postprocessing scripts for Slic3r for adding wipe towers and other multi-
 - [ ] not compatible to absolute extrusion mode
 - [ ] Slic3r environment variables cannot be read, therefore settings and parameters have to be manually declared within the custom "Start G-code"
 
+## Changes in v2
+- [x] some bugfixes
+- [x] added optional parameter "forceToolChanges", defaults to true
+
 ## How to use
 In order to get the scripts working properly, I suggest creating print and printer settings in slic3r exclusively for use with those scripts, and modifying these settings as described below.
 
@@ -32,6 +36,7 @@ I suggest only using one post-processing Script at a time.
 2. In _Printer Settings -> Custom G-Code_, add the following to the very beginning of your "Start G-code", your own custom Start G-code can follow after that:
 ```
 ; WIPE TOWER PARAMS
+; forceToolChanges=true
 ; nozzleDiameter=[nozzle_diameter]
 ; filamentDiameter=[filament_diameter]
 ; extrusionWidth=[extrusion_width]
