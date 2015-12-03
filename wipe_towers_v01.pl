@@ -703,7 +703,11 @@ sub readParams{ # collecting params
 		$filamentDiameter=$1*1.0;
 	}
 	if($_[0]=~/extrusionWidth=(\d*\.?\d*)/){
-		$extrusionWidth=$1*1.0;
+		# Use the specified extrusion width, unless it is set to the "automatic" value of 0,
+		# in which case the pre-initialized value of $nozzleDiameter will be used
+		unless ( $1 eq "0" ) {
+		    $extrusionWidth=$1*1.0;
+		}
 	}
 	if($_[0]=~/extrusionMultiplier=(\d*\.?\d*)/){
 		$extrusionMultiplier=$1*1.0;
