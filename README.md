@@ -9,10 +9,9 @@ useful postprocessing scripts for Slic3r for adding wipe towers and other multi-
 
 ## Changelog
 ### to do
-- [ ] not compatible to relative coordinate mode
-- [ ] not compatible to absolute extrusion mode
+- [ ] add compatibility for relative coordinate mode
+- [ ] add compatibility for absolute extrusion mode
 - [ ] Slic3r environment variables cannot be read, therefore settings and parameters have to be manually declared within the custom "Start G-code"
-- [ ] clean up the code and find a readable structure
 - [ ] add workaround for Slic3rs lack of retraction on print start for inactive extruders
 
 ### v1
