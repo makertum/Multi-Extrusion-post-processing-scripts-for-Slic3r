@@ -1,10 +1,10 @@
+#!/usr/bin/perl -i
 # WIPE TOWERS v01
 # PERL POSTPROCESSOR FOR ADDING WIPE TOWERS TO SLIC3R
 # YUNOMAKE.COM
 # AUTHOR: Moritz Walter 2015
 # LICENSED UNDER GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
 
-#!/usr/bin/perl -i
 use strict;
 use warnings;
 use Math::Round;
@@ -94,13 +94,6 @@ my @endOfLayerLines=();
 
 my $bypass=0;
 
-for(my $i=0;$i<$extruders;$i++){
-	$linesByExtruder[$i]=();
-	$gcodeX[$i]=0;
-	$gcodeY[$i]=0;
-	$gcodeE[$i]=0;
-	$gcodeRetraction[$i]=0;
-}
 
 ##########
 # MAIN LOOP
@@ -108,9 +101,16 @@ for(my $i=0;$i<$extruders;$i++){
 
 while (<>) {
 	if($start==0){
-  	readParams($_);
-		evaluateLine($_);
-		print;
+  	    readParams($_);
+  	    for(my $i=0;$i<$extruders;$i++){
+  	    	$linesByExtruder[$i]=();
+	        $gcodeX[$i]=0;
+	        $gcodeY[$i]=0;
+	        $gcodeE[$i]=0;
+	        $gcodeRetraction[$i]=0;
+	    }
+	    evaluateLine($_);
+	    print;
 	}elsif($end==1){
   	print; # just print out everything after the end code marker
 	}elsif (/^T(\d)/){
